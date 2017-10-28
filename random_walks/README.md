@@ -4,7 +4,7 @@
 
 Generates random walks based on the decimal representations of mathematical
 constants, using the translation shown in the following image:
-![decimal steps](images/decimal_steps.png)
+![decimal steps](images/decimal_steps.png?raw=true)
 
 
 Some examples:
