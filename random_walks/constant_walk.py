@@ -83,7 +83,7 @@ def plot_walk(constant='pi', N=N, square=True, cmap=None, color=None, ax=None):
     return ax, lc, (min_x, max_x), (min_y, max_y)
 
 def plot_all_grid():
-    fig, axes = plt.subplots(2,2, figsize=(5,5))
+    fig, axes = plt.subplots(2,2, figsize=(8,8))
     overall_lim = []
     for idx, constant in enumerate(CONSTANTS.keys()):
         row = idx // 2
@@ -101,7 +101,7 @@ def plot_all_grid():
     return fig
 
 def plot_all_single():
-    fig = plt.figure(figsize=(5,5))
+    fig = plt.figure(figsize=(8,8))
     ax = fig.add_subplot(111)
     pal = sns.color_palette()
     overall_lim = []
