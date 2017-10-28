@@ -130,12 +130,11 @@ def plot_all_single():
 def main():
     fig = plot_all_single()
     fig.savefig('images/constant_single_plot.png', dpi=300)
-    plt.show()
     fig.clf()
 
     fig = plot_all_grid()
+    fig.set_size_inches(3, 3)
     fig.savefig('images/constant_grid_plot.png', dpi=300)
-    plt.show()
     fig.clf()
 
 if __name__ == '__main__':
