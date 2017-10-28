@@ -165,8 +165,7 @@ def main():
     fig.clf()
 
 if __name__ == '__main__':
-    # main()
-    res = plot_steps()
+    main()
 
 
 
