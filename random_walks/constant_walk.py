@@ -13,6 +13,7 @@ import seaborn as sns
 from mpmath import mp
 
 N = 50000
+mp.dps = N
 PALETTE = 'magma'
 
 CONSTANTS = {
@@ -21,11 +22,10 @@ CONSTANTS = {
         'phi'    : mp.phi,
         # 'euler'  : mp.euler,   # these are slow to calculate
         # 'mertens': mp.mertens,
-        'sqrt2'  : mp.sqrt(2),
+        'sqrt2'  : mp.sqrt(2)
         }
 
 def get_digits(constant):
-    mp.dps = N
     cstring = str(CONSTANTS[constant])
     cstring = cstring.replace('.', '')
     return cstring
@@ -83,7 +83,7 @@ def plot_walk(constant='pi', N=N, square=True, cmap=None, color=None, ax=None):
     return ax, lc, (min_x, max_x), (min_y, max_y)
 
 def plot_all_grid():
-    fig, axes = plt.subplots(2,2, figsize=(8,8))
+    fig, axes = plt.subplots(2,2, figsize=(5,5))
     overall_lim = []
     for idx, constant in enumerate(CONSTANTS.keys()):
         row = idx // 2
@@ -101,7 +101,7 @@ def plot_all_grid():
     return fig
 
 def plot_all_single():
-    fig = plt.figure(figsize=(8,8))
+    fig = plt.figure(figsize=(5,5))
     ax = fig.add_subplot(111)
     pal = sns.color_palette()
     overall_lim = []
@@ -130,10 +130,12 @@ def plot_all_single():
 def main():
     fig = plot_all_single()
     fig.savefig('images/constant_single_plot.png', dpi=300)
+    plt.show()
     fig.clf()
 
     fig = plot_all_grid()
     fig.savefig('images/constant_grid_plot.png', dpi=300)
+    plt.show()
     fig.clf()
 
 if __name__ == '__main__':
