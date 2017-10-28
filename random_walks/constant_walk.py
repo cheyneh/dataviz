@@ -86,7 +86,6 @@ def plot_all_grid():
     fig, axes = plt.subplots(2,2, figsize=(8,8))
     overall_lim = []
     for idx, constant in enumerate(CONSTANTS.keys()):
-        print('plotting {}'.format(constant))
         row = idx // 2
         col = idx % 2
         ax = axes[row, col]
@@ -109,7 +108,6 @@ def plot_all_single():
     legend_handles = []
     legend_labels = []
     for color, constant in zip(pal, CONSTANTS.keys()):
-        print(constant)
         ax, handler, xlim, ylim = plot_walk(
                 constant=constant, 
                 ax=ax,
@@ -129,18 +127,17 @@ def plot_all_single():
     ax.set_xlabel("x")
     return fig
 
+def main():
+    fig = plot_all_single()
+    fig.savefig('images/constant_single_plot.png', dpi=300)
+    fig.clf()
 
-
-
-    
-
-
-
+    fig = plot_all_grid()
+    fig.savefig('images/constant_grid_plot.png', dpi=300)
+    fig.clf()
 
 if __name__ == '__main__':
-    pass
-    # plot_all()
-    # plt.show()
+    main()
 
 
 
