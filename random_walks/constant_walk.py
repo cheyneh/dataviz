@@ -46,18 +46,18 @@ def get_digit_to_step_translator(vector=np.array([1,0])):
         return steps[digit]
     return digit_to_step
 
-def get_segments(N, constant):
+def get_segments(digits):
     digit_to_step = get_digit_to_step_translator()
 
-    points = np.array([digit_to_step(d) for d in get_digits(constant)])
+    points = np.array([[0,0]] + [digit_to_step(d) for d in digits])
     points = points.cumsum(axis=0)
 
     points = points.reshape(-1, 1,  2)
     segments = np.concatenate([points[:-1], points[1:]], axis=1)
     return segments
 
-def plot_walk(constant='pi', N=N, square=True, cmap=None, color=None, ax=None):
-    segments = get_segments(N, constant)
+def plot_walk(constant='pi', square=True, cmap=None, color=None, ax=None):
+    segments = get_segments(get_digits(constant))
     max_x = segments[:,:,0].max()
     min_x = segments[:,:,0].min()
     max_y = segments[:,:,1].max()
@@ -127,18 +127,46 @@ def plot_all_single():
     ax.set_xlabel("x")
     return fig
 
+def plot_steps():
+    steps = [str(i) for i in range(10)]
+    fig = plt.figure(figsize=(8,8))
+    ax = fig.add_subplot(111)
+    colors = sns.color_palette('husl', 10)
+    legend_handles, legend_labels = [], []
+    for c, s in zip(colors, steps):
+        segments = get_segments(s)
+        lc = LineCollection(segments, color=c)
+        legend_handles.append(lc)
+        legend_labels.append(s)
+        ax.add_collection(lc)
+    ax.set_ylim(-1.5, 1.5)
+    ax.set_xlim(-1.5, 1.5)
+    ax.legend(legend_handles, legend_labels)
+    ax.set_aspect('equal')
+    fig.suptitle('Steps Associated to Each Digit')
+    return fig
+
+
+
+
+
 def main():
+    fig = plot_steps()
+    fig.savefig('images/decimal_steps.png', dpi=150)
+    fig.clf()
+
+
     fig = plot_all_single()
     fig.savefig('images/constant_single_plot.png', dpi=300)
     fig.clf()
 
     fig = plot_all_grid()
-    fig.set_size_inches(3, 3)
     fig.savefig('images/constant_grid_plot.png', dpi=300)
     fig.clf()
 
 if __name__ == '__main__':
-    main()
+    # main()
+    res = plot_steps()
 
 
 
