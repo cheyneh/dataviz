@@ -7,4 +7,5 @@ constants, using the translation shown in the following image:
 
 
 Some examples:
-![Alt text](images/constant_grid_walk.png?raw=true "Optional Title")
+![constant_grid_walk](images/constant_grid_plot.png?raw=true "Grid of Walks")
+![constant_walk](images/constant_single_plot.png?raw=true "Single Plot")
