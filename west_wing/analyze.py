@@ -75,7 +75,7 @@ def plot_character_arcs(data, window=12, trim=10):
     ax.set_xlabel("Season")
     ax.set_ylabel("Percentage of Lines")
     ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: '{:.0%}'.format(y))) 
-    ax.set_title("(Window size = {}".format(window))
+    ax.set_title("(window size = {} episodes)".format(window))
     fig.suptitle("West Wing Character Prominence by Season")
 
     handles, labels = ax.get_legend_handles_labels()
