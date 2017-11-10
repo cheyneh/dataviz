@@ -45,8 +45,8 @@ class Data(object):
         rdf = df.rolling(window, win_type='bartlett', center=True).mean()
         return rdf
 
-def plot_character_arcs(data):
-    df = data.rolling(trim=10, window=12)
+def plot_character_arcs(data, window=12, trim=10):
+    df = data.rolling(trim=trim, window=window)
     fig = plt.figure(figsize=(12,6))
     ax = fig.add_subplot(111)
     df.plot(ax=ax, legend=False)
@@ -75,15 +75,14 @@ def plot_character_arcs(data):
     ax.set_xlabel("Season")
     ax.set_ylabel("Percentage of Lines")
     ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: '{:.0%}'.format(y))) 
-    ax.set_title("West Wing Character Prominence by Season")
+    ax.set_title("(Window size = {}".format(window))
+    fig.suptitle("West Wing Character Prominence by Season")
 
     handles, labels = ax.get_legend_handles_labels()
     ax.legend(handles, labels, bbox_to_anchor=(1.2, .7))
     fig.subplots_adjust(right=.8)
-    fig.savefig(os.path.join('images', 'character_ts.png'), dpi=300)
-
+    # fig.savefig(os.path.join('images', 'character_ts.png'), dpi=300)
     return fig
-
 
 def plot_heatmap():
     df = process_data.get_data()
@@ -110,6 +109,19 @@ def plot_heatmap():
     names = [t.get_text() for t in ax.get_yticklabels()]
     ax.set_yticklabels(names, rotation=0)
     return ax
+
+def main():
+    data = Data()
+
+    char_arcs_10 = plot_character_arcs(data, window=10)
+    fname = os.path.join('images', 'character_arcs_win10.png') 
+    char_arcs_10.savefig(fname, dpi=300)
+
+    char_arcs_20 = plot_character_arcs(data, window=20)
+    fname = os.path.join('images', 'character_arcs_win20.png') 
+    char_arcs_20.savefig(fname, dpi=300)
+
+    plt.close('all')
 
 if __name__ == '__main__':
     # data = Data()
