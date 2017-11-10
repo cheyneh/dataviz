@@ -6,6 +6,7 @@ season six and seven transcripts are incomplete.
 
 ## Character Arcs
 Time series depicting the percentage of lines per episode of the top ten series
-characters (ranked by number of lines).
+characters (ranked by number of lines). Uses a (Bartlett-type) rolling window to 
+emphasize multi-episode trends. 
 
 ![character_series](images/character_ts.png?raw=true)
