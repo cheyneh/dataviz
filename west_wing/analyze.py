@@ -69,7 +69,7 @@ def plot_character_arcs(data):
                     (x1,0), 
                     x2-x1, 1,
                     facecolor='#000000',
-                    alpha=0.2
+                    alpha=0.1
                     )
                 )
     ax.set_xlabel("Season")
