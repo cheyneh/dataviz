@@ -3,3 +3,4 @@ __pycache__/
 *data
 reddit/array_MWE/
 reddit/credentials.json
+reddit/data.json
