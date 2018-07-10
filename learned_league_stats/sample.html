@@ -1,0 +1,2085 @@
+<!--------------- BEGIN TOP.SHTML   --------------->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+	<title>LL76 MD1 Rundle E Cascade Div 1 Results</title>
+
+<link rel="stylesheet" TYPE='text/css' HREF='/stylesheets/master.css'>
+
+
+
+<link rel="stylesheet" href="./styles/subsilver2/theme/stylesheet.css" type="text/css" />
+<link REL="icon" HREF="/images/logos/clownball_transparent.ico" TYPE="image/ico">
+<link rel="shortcut icon" type="image/x-icon" href="/images/logos/clownball_transparent.ico" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+
+<!--<LINK REL=stylesheet TYPE='text/css' HREF='/stylesheets/default.css'>-->
+<META name="description" content="The Greatest Trivia League in All the Land.">
+<META name="keywords" content="trivia, league, learnedleague, thorsten, integrity, one-day, minileague">
+
+
+<!--<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">-->
+
+<!-- commenting out these scripts, don't think they're needed. Restore if they are --><!-- scripts/domdata.js = browser and platform sniffs -->
+<script src="/scripts/domdata.js" language="javascript" type="text/javascript"></script>
+
+<!-- scripts/ll_objects.js = document object creation methods including capture of menu arrays -->
+<script src="/scripts/ll_objects.js" language="javascript" type="text/javascript" ></script>
+
+<!-- scripts/ll_menus.js = create and manipulate menus -->
+<script src="/scripts/ll_menus.js" language="javascript" type="text/javascript" ></script>
+
+<!-- Prototype library for cloud-1.0.js -->
+<script src="/scripts/prototype-1.6.0.js" type="text/javascript" ></script>
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to:', '');
+	var per_page = '';
+	var base_url = '';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+
+<!--
+<script>
+/**	NEW PLAYER SEARCH FUNCTION	*/
+function showResult(str) {
+  if (str.length<3) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #cccccc";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+-->
+
+
+
+</head>
+
+<body>
+<script type="text/javascript" src="/scripts/wz_tooltip.js"></script>
+
+<center>
+<a name="top"></a>
+
+
+
+<div id="topbanner-push" style="border: 0px solid #999999;padding-bottom:5px;background:#ffffff;">
+
+	<!-- Begin topbanner -->
+	<div id="topbanner" class="pagewidth" style="background-color:#246648;height:2px;">
+	</div>
+	<!-- End topbanner --><!-- Begin Logo -->
+	<div id="logo">
+		<div id="verytopbanner-push" style="position: absolute;top: 2px;right: 6px;z-index: 100;width: auto;padding: 0px 0px 0px 0px;text-align:right;border:0px solid #cccccc;width:400px;">
+				
+				
+				<form method="post" action="./ucp.php?mode=login&amp;sid=6d02d3eb6715af3dfde55e458804fca7">
+				<input class="posttiny" type="text" name="username" value="" size="20" placeholder="PlayerName">&nbsp; <!--<span class="gensmall">Password:</span>--> 
+				<input value="" class="posttiny" style="font-size:10px;" type="password" name="password" size="12" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+				&nbsp;<input type="submit" class="btntiny" name="login" value="Login" /><br>
+				<input type="checkbox" class="radio" name="autologin" /><span class="gensmall-nopad">Log me on automatically each visit | <span class="gensmall-nopad"><a href="./ucp.php?mode=sendpassword&amp;sid=6d02d3eb6715af3dfde55e458804fca7">Forgot Password</a></span>
+				<!--<input type="hidden" name="redirect" value="./match.php?76&amp;1&amp;E_Cascade_Div_1&amp;sid=6d02d3eb6715af3dfde55e458804fca7" />
+--><!--	<input type="hidden" name="redirect" value="./../index.php">-->
+				
+				</form>
+			
+		</div>	
+							
+		
+		
+		<div style="position: absolute;top: -20px;left: 6px;z-index: 100;">
+			<div style="padding:20px 9px 6px 9px; margin: 4px;">
+			<a href="/">
+				<img src="/images/logos/GiantClownball.png" border="0" alt="LearnedLeague" align="top" height=130 width=130 />
+					<!-- ALTERNATE CLOWNBALLS -->
+					<!--<img src="/images/logos/GiantPrideball.png" border="0" alt="LearnedLeague" align="top" height=130 width=130 />-->
+					<!--<img src="/images/logos/GiantUSAball2.png" border="0" alt="LearnedLeague" align="top" height=130 width=130 />-->
+					<!--<img src="/images/logos/GiantGreenball.png" border="0" alt="LearnedLeague" align="top" height=130 width=130 />-->
+					<!--<img src="/images/logos/BigClownballTransparent20years.png" border="0" alt="LearnedLeague" align="top" height=130 width=130 />-->
+			</a>
+			</div>
+		</div>
+
+		<div style="position: absolute;top: -20px;left: 126px;z-index: 100;width: auto;">
+			<div style="padding:20px 9px 6px 30px; margin: 4px;">
+			<a href="/"><img src="/images/logos/LL_LOGO_JUSTTEXT_432x94.gif" border="0" alt="LearnedLeague" align="top" height=94 width=432 /></a>
+			</div>
+		</div>
+	</div><!-- closing logo div -->
+	
+</div><!-- closing topbanner-push div --><!-- Ending not SmithBA restriction --><!-- player search is in bottom banner --><!-- begin LL container--><!-- START tab section-->
+	<div style="text-align:left;width:976px;background:#ffffff;z-index:-5;">
+		
+		<!-- Begin Tabs -->			
+		<div id="tabs">
+			<div id="tabs-bounds">
+				<table cellspacing="0" cellpadding=0 border=0 class="tabstbl">
+				<thead>
+				<tr>
+					<td>
+					<a href="/" class="tab-on">LearnedLeague</a>
+					</td>
+					<td>
+					<a href="/mini/" class="tab-off">MiniLeagues</a>
+					</td>
+					<td>
+					<a href="/oneday/" class="tab-off">One-Day</a>
+					</td>
+				</tr>
+				</thead>
+				</table>
+			</div>
+		</div>
+			<!-- End Tabs --><!-- Begin Tabs-specific Menu -->
+		<div id="tabs-menu">
+			<div style="float:left;border:0px solid #cccccc;width:75%;"><P>
+				<a href="/standings.php?76">LL76 Standings/Home</a> | 
+				<!-- <a href="/ll56/standings.php" class="anchorclass myownclass" rel="submenu3">LL56 Standings Menu</a> | -->
+				<a href="/thorsten/" class="anchorclass myownclass" rel="submenu4">Thorsten's Desk</a> |
+					<a href="/hist/"  class="anchorclass myownclass" rel="submenu5">History</a>
+						
+
+					
+					<!--| 
+					<a href="http://www.cafepress.com/learnedleague">Shoppe</a> -->
+					
+						
+
+						| <a href='/tracker/trackerlink.php'>Player Tracker</a> | <a href='/private.php'>Private Rundles</a>
+
+						
+					
+					</P>
+			</div>	
+			<div style="float:right;border-left:1px solid #cccccc;width:14%;text-align:right;background-color: Moccasin;background-colo: MistyRose;height:22px;">
+					<P>
+					<a href="/membercenter.php">Member Center</a>
+					</P>
+			</div>
+		</div>
+		<!-- End Tabs-specific Menu -->
+	</div>
+	<!-- STOP tab section-->
+
+
+				<TABLE cellspacing=0 border=0 bgcolor=#ffffff width=976>
+
+					<TR>
+						<TD valign=top style="padding:10px 5px 10px 0;text-align:left;">
+
+<!--
+
+<div style='width:640px;'>
+	<div style="background-color: Honeydew; padding:10px; margin: 0px 0px 5px 0px;border: 1px solid #336666;font-size: 11px;font-weight:bold; text-align:center;color: MidnightBlue;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+		<div  style="background-color: #990000; padding:3px; margin: 0px 0px 5px 0px;border: 0px solid #336666;font-size: 11px;font-weight:bold; text-align:center;color: white;">
+			Special Announcement
+		</div>
+	Due to issues at the LL web hosting company (unrelated to LL), performance of the LearnedLeague site is severely degraded. As a result, LL74 Match Day 6 has been extended to Thursday, August 31, with a new due time of 10pm PT on Thursday. While on the site, you may experience sluggishness and intermittent down time, and some services may not be available. Very sorry for the inconvenience. Emails will go out to all players when the site is restored to 100% performance.
+
+	</div>
+</div>
+	<div style='clear:both;'></div>
+
+
+-->
+
+						<!-- end LL container-->
+
+
+		<script src='https://www.learnedleague.com/scripts/RdlDropdown.js' language='javascript' type='text/javascript'></script>
+		<script type='text/javascript'>var GB_ROOT_DIR = 'https://www.learnedleague.com/scripts/greybox/';</script>
+		<script type='text/javascript' src='/scripts/greybox/AJS.js'></script>
+		<script type='text/javascript' src='/scripts/greybox/AJS_fx.js'></script>
+		<script type='text/javascript' src='/scripts/greybox/gb_scripts.js'></script>
+		<link href='/scripts/greybox/gb_styles.css' rel='stylesheet' type='text/css' />
+
+<div style='float:left'>
+	<h1 class='matchday'>
+		February 20, 2018: LL76 Match Day 1 Results
+		</h1>
+		
+			<div style='float:left' class='smallspan'>
+				&nbsp;&nbsp;<a href='/match.php?76&1'><< All Cascade Match Day 1 Results</a> | 
+			</div>
+		
+		
+				<div style='float:left' class='smallspan'>
+						<!-- RUNDLE DROPDOWN LIST -->
+						<ul id='nav2'>
+							<li><a href='#'>Jump to Cascade Rundle &#9660;</a>
+								<ul>	
+									<li><a href='/match.php?76&1&A_Cascade'>Rundle A Cascade</a></li><li><a href='/match.php?76&1&B_Cascade'>Rundle B Cascade</a></li><li><a href='/match.php?76&1&C_Cascade'>Rundle C Cascade</a></li><li><a href='/match.php?76&1&D_Cascade_Div_1'>Rundle D Cascade Div 1</a></li><li><a href='/match.php?76&1&D_Cascade_Div_2'>Rundle D Cascade Div 2</a></li><li><a href='/match.php?76&1&E_Cascade_Div_1'>Rundle E Cascade Div 1</a></li><li><a href='/match.php?76&1&E_Cascade_Div_2'>Rundle E Cascade Div 2</a></li><li><a href='/match.php?76&1&R_Cascade_Div_1'>Rundle R Cascade Div 1</a></li><li><a href='/match.php?76&1&R_Cascade_Div_2'>Rundle R Cascade Div 2</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- STOP DROPDOWN LIST -->
+					 
+				</div>
+			
+</div>
+	
+<div style='float:right;TEXT-ALIGN:RIGHT;'>
+	<h1>
+	Rundle E Cascade Div 1</h1>
+		
+		
+		<!-- NAVIGATION TO TOMORROW/YESTERDAY -->	
+				<span class='smallspan'><a href='/match.php?76&2&E_Cascade_Div_1'>Match Day 2 >></a></span>
+				
+
+
+</div>
+
+<table cellpadding=10 cellspacing=0 width='100%'>
+	<tr>
+		<td width=40%>
+			<LINK REL=stylesheet TYPE='text/css' HREF='/stylesheets/results2.css'>
+				<h2>Questions/Answers</h2>
+							<div class="ind-boxATbl">
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&1'>Q1</a>.</span> GEOGRAPHY - What area, which sits along the eastern coast of Nicaragua and Honduras, is not named after an annoying pest (though they are abundant in the region), but rather for the indigenous people who have inhabited the area for centuries?&nbsp;<span class='a-red'>MOSQUITO COAST</span>
+											</div>
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&2'>Q2</a>.</span> CLASS MUSIC - While the term is used loosely to refer to just about any brass instrument (cornet, trumpet, trombone, etc.), the word <I>horn</I> is also used in the name of what common modern woodwind instrument, whose plaintive and mournful sound is featured prominently in Wagner's <I>Tristan and Isolde</I> and Sibelius's <I>The Swan of Tuonela</I>?&nbsp;<span class='a-red'>COR ANGLAIS/ENGLISH HORN</span>
+											</div>
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&3'>Q3</a>.</span> GAMES/SPORT - <I>My Life</I>, <I>32 Ways to Be a Champion in Business</I>, and <I>What You Can Do to Avoid AIDS</I> are all books authored by what athlete?&nbsp;<span class='a-red'>EARVIN "MAGIC" JOHNSON</span>
+											</div>
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&4'>Q4</a>.</span> WORLD HIST - The Russian nickname <I>grozny</I> (as in the Chechen capital) translates literally to &quot;awe-inspiring&quot; or &quot;formidable,&quot; but when applied in its best known historical reference, it is more commonly rendered in English as what?&nbsp;<span class='a-red'>TERRIBLE</span>
+											</div>
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&5'>Q5</a>.</span> POP MUSIC - <I>1-800-273-8255</I>, a hit single by Logic featuring Alessia Cara and Khalid released in April 2017, is also the phone number for a hotline created for what purpose?&nbsp;<span class='a-red'>SUICIDE PREVENTION</span>
+											</div>
+											<div class='ind-Q20'>
+												<span class='ind-Numb3'><a href='/question.php?76&1&6'>Q6</a>.</span> BUS/ECON - 1991's Treaty of Asunci&oacute;n created a free trade bloc whose full members today are Argentina, Brazil, Paraguay, and Uruguay, and that goes by what name?&nbsp;<span class='a-red'>MERCOSUR</span>
+											</div>
+							</div>
+
+
+				<h2><nobr>Today's Rundle E Cascade Div 1 Results</nobr></h2>
+							<table class='tblResults' cellpadding=0 cellspacing=0 width=100%>
+							<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?murphymg' class='flag'><img src='/images/f2/m/MurphyMGsm.gif' class='flagimg' height='14' width='25' align='top' title='MurphyMG' alt='MurphyMG'></a></nobr></td>
+					<td class='results2'><nobr>MurphyMG</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597554'>1(2)&nbsp;&nbsp;3(2)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>HombergerC</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?hombergerc' class='flag'><img src='/images/flags/1600/c1692sm.gif' class='flagimg' height='14' width='25' align='top' title='HombergerC' alt='HombergerC'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?hulsa' class='flag'><img src='/images/flags/2300/e2377sm.gif' class='flagimg' height='14' width='25' align='top' title='HulsA' alt='HulsA'></a></nobr></td>
+					<td class='results2'><nobr>HulsA</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597579'>3(3)&nbsp;&nbsp;5(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>CrouchE</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?crouche' class='flag'><img src='/images/b/b1073sm.gif' class='flagimg' height='14' width='25' align='top' title='CrouchE' alt='CrouchE'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?ayreyk' class='flag'><img src='/images/g/67/74sm.gif' class='flagimg' height='14' width='25' align='top' title='AyreyK' alt='AyreyK'></a></nobr></td>
+					<td class='results2'><nobr>AyreyK</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597604'>1(1)&nbsp;&nbsp;2(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>PiercyB</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?piercyb' class='flag'><img src='/images/flags/2000/c2080sm.gif' class='flagimg' height='14' width='25' align='top' title='PiercyB' alt='PiercyB'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?pearcej' class='flag'><img src='/images/f2/p/PearceJsm.gif' class='flagimg' height='14' width='25' align='top' title='PearceJ' alt='PearceJ'></a></nobr></td>
+					<td class='results2'><nobr>PearceJ</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597629'>3(3)&nbsp;&nbsp;2(2)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>StauchJ</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?stauchj' class='flag'><img src='/images/f2/s/StauchJsm.gif' class='flagimg' height='14' width='25' align='top' title='StauchJ' alt='StauchJ'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?griffinnj' class='flag'><img src='/images/flags/1200/b1218sm.gif' class='flagimg' height='14' width='25' align='top' title='GriffinNJ' alt='GriffinNJ'></a></nobr></td>
+					<td class='results2'><nobr>GriffinNJ</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597654'>2(1)&nbsp;&nbsp;1(1)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>TerryJ</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?terryj' class='flag'><img src='/images/g/74/a1944sm.gif' class='flagimg' height='14' width='25' align='top' title='TerryJ' alt='TerryJ'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?rosendahlh' class='flag'><img src='/images/c/c715sm.gif' class='flagimg' height='14' width='25' align='top' title='RosendahlH' alt='RosendahlH'></a></nobr></td>
+					<td class='results2'><nobr>RosendahlH</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597679'>3(3)&nbsp;&nbsp;4(4)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>DowneyMbrella.</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?downeymbrella_ella_ella' class='flag'><img src='/images/g/71/95sm.gif' class='flagimg' height='14' width='25' align='top' title='DowneyMbrella ella ella' alt='DowneyMbrella ella ella'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?baysc' class='flag'><img src='/images/b/b201sm.gif' class='flagimg' height='14' width='25' align='top' title='BaysC' alt='BaysC'></a></nobr></td>
+					<td class='results2'><nobr>BaysC</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597704'>6(3)&nbsp;&nbsp;1(2)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>BeckerD</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?beckerd' class='flag'><img src='/images/a/a1073sm.gif' class='flagimg' height='14' width='25' align='top' title='BeckerD' alt='BeckerD'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?nanneycb' class='flag'><img src='/images/c/c791sm.gif' class='flagimg' height='14' width='25' align='top' title='NanneyCB' alt='NanneyCB'></a></nobr></td>
+					<td class='results2'><nobr>NanneyCB</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597729'>3(3)&nbsp;&nbsp;5(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>GossettN</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?gossettn' class='flag'><img src='/images/g/62/6sm.gif' class='flagimg' height='14' width='25' align='top' title='GossettN' alt='GossettN'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?braunsdorfc' class='flag'><img src='/images/g/68/g173sm.gif' class='flagimg' height='14' width='25' align='top' title='BraunsdorfC' alt='BraunsdorfC'></a></nobr></td>
+					<td class='results2'><nobr>BraunsdorfC</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597754'>1(1)&nbsp;&nbsp;3(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>HuR</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?hur' class='flag'><img src='/images/flags/1800/a1864sm.gif' class='flagimg' height='14' width='25' align='top' title='HuR' alt='HuR'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?packb' class='flag'><img src='/images/d/d737sm.gif' class='flagimg' height='14' width='25' align='top' title='PackB' alt='PackB'></a></nobr></td>
+					<td class='results2'><nobr>PackB</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597779'>1(2)&nbsp;&nbsp;5(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>PantoneJ</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?pantonej' class='flag'><img src='/images/f2/p/PantoneJsm.gif' class='flagimg' height='14' width='25' align='top' title='PantoneJ' alt='PantoneJ'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?nesbergnchill' class='flag'><img src='/images/f2/n/NesbergNChillsm.gif' class='flagimg' height='14' width='25' align='top' title='NesbergNChill' alt='NesbergNChill'></a></nobr></td>
+					<td class='results2'><nobr>NesbergNChill</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597804'>2(1)&nbsp;&nbsp;3(3)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>VatterV</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?vatterv' class='flag'><img src='/images/a/a1030sm.gif' class='flagimg' height='14' width='25' align='top' title='VatterV' alt='VatterV'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?flenkert' class='flag'><img src='/images/flags/1200/b1279sm.gif' class='flagimg' height='14' width='25' align='top' title='FlenkerT' alt='FlenkerT'></a></nobr></td>
+					<td class='results2'><nobr>FlenkerT</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597829'>3(3)&nbsp;&nbsp;4(4)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>MarkwoodC</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?markwoodc' class='flag'><img src='/images/flags/2300/c2386sm.gif' class='flagimg' height='14' width='25' align='top' title='MarkwoodC' alt='MarkwoodC'></a></nobr></td>
+					</tr>
+<tr class='even'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?turners' class='flag'><img src='/images/c/c645sm.gif' class='flagimg' height='14' width='25' align='top' title='TurnerS' alt='TurnerS'></a></nobr></td>
+					<td class='results2'><nobr>TurnerS</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597854'>2(2)&nbsp;&nbsp;1(2)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>AutonJ</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?autonj' class='flag'><img src='/images/flags/1200/d1269sm.gif' class='flagimg' height='14' width='25' align='top' title='AutonJ' alt='AutonJ'></a></nobr></td>
+					</tr>
+<tr class='odd-row'>
+					<td class='results2' width=25><nobr><a href='/profiles.php?blinkp' class='flag'><img src='/images/g/67/226sm.gif' class='flagimg' height='14' width='25' align='top' title='BlinkP' alt='BlinkP'></a></nobr></td>
+					<td class='results2'><nobr>BlinkP</nobr></td>
+					<td class='results2' style='text-align:center;width:50px;'><nobr><a href='/match.php?id=1597879'>6(4)&nbsp;&nbsp;2(1)</a></nobr></td>
+					<td class='results2' style='text-align:right;'><nobr>BrignallR</nobr></td>
+					<td class='results2' width=25><nobr><a href='/profiles.php?brignallr' class='flag'><img src='/images/flags/1800/d1817sm.gif' class='flagimg' height='14' width='25' align='top' title='BrignallR' alt='BrignallR'></a></nobr></td>
+					</tr>
+
+							</table>
+
+		</td>
+		
+		<td>
+			
+			
+
+
+			<h2><nobr>Current Rundle E Cascade Div 1 Standings & Today's E Cascade Div 1 Player Metrics</nobr></h2>
+			<style>
+			<!--
+			.cor {background-color: #A8D5C4;border:1px solid #f6f7f2;}
+			.inc {background-color: #DCA4BD;border:1px solid #f6f7f2;}
+			.f {background-color: Gainsboro;border:1px solid #f6f7f2;}
+			.c1 {background-color:ForestGreen;border:1px solid #f6f7f2;padding:3px;text-align:center;font-size:11px;color:#f6f7f2;font-weight:bold;}
+			.c0 {background-color: Crimson;border:1px solid #f6f7f2;text-align:center;padding:3px;font-size:11px;color:#f6f7f2;font-style:italic;}
+			.cF {background-color: Black;border:1px solid #f6f7f2;text-align:center;padding:3px;font-size:11px;color:#f6f7f2;}
+				.d9 {border-bottom:1px solid #cccccc;}
+				.odd-row {background-color:#F3F4EF;}
+			-->
+			</style>
+				<table cellspacing=0 summary='Data table for current LL standings' class='sortable' width=98%>
+					<thead>
+					<tr>
+						<td class="std-head-mid"><a href='/question.php?76&1&1'>Q1</a></td>
+						<td class="std-head-mid"><a href='/question.php?76&1&2'>Q2</a></td>
+						<td class="std-head-mid"><a href='/question.php?76&1&3'>Q3</a></td>
+						<td class="std-head-mid"><a href='/question.php?76&1&4'>Q4</a></td>
+						<td class="std-head-mid"><a href='/question.php?76&1&5'>Q5</a></td>
+						<td class="std-head-mid"><a href='/question.php?76&1&6'>Q6</a></td>
+						<td class="std-head-mid sortfirstasc" style="border-left: 1px solid #c6c7c2;">Rank</td>
+						<td class="std-head-mid">Player</td>
+						<td class="std-head-mid"><a onmouseover="Tip('Wins')" onmouseout="UnTip()">W</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip('Losses')" onmouseout="UnTip()">L</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip('Ties')" onmouseout="UnTip()">T</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip('Points in Standings -- This determines the order of<br>the standings. Two points for a win, one for a tie,<br>-1 for a forfeit.')" onmouseout="UnTip()">PTS</a></td>
+						<td class="std-head-mid mpd"><a onmouseover="Tip('Match Points Differential -- Difference between match points scored and match points allowed. This is the first tiebreaker in case of PTS ties.')" onmouseout="UnTip()">MPD</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip('Total Match Points -- sum of points scored in all matches')" onmouseout="UnTip()">TMP</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip('Total Correct Answers -- sum of questions<br>answered correctly in all matches')" onmouseout="UnTip()">TCA</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip(' Defensive Efficiency -- The total number of UfPA<br>the player could have but did not allow divided by<br>the total number he could have allowed. This<br>measures how stingy the player\'s defense is. The<br>higher the number the better; 1.000 is perfect --<br>meaning the player did not give up any UfPA')" onmouseout="UnTip()">DE</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip(' Losses by Forfeit')" onmouseout="UnTip()">FL</a></td>
+						<td class="std-head-mid"><a onmouseover="Tip(' 3-point questions answered correctly')" onmouseout="UnTip()">3PT</a></td>
+					</tr>
+					</thead>
+					
+					<tbody>
+			
+					
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>0</td>
+					<td class='c1'>3</td>
+					<td class='c0'>1</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='d3  std-mid' style='border-left: 1px solid #c6c7c2;'><div class='promotion'>1</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='d3  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='d3  std-midleft' nowrap><a href='/profiles.php?baysc' class='flag'>
+					<img src='/images/b/b201sm.gif' class='flagimg' height='14' width='25' align='top' title='BaysC' alt='BaysC'></a>&nbsp;BaysC</td>
+
+					
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid mpd'>5</td>
+
+					<td class='d3  std-mid'>6</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<!--<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid'>0.50</td>
+
+					<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>1.000</td>
+
+					<!--<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>1</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>0</td>
+					<td class='c1'>3</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='d3  std-mid' style='border-left: 1px solid #c6c7c2;'><div class='promotion'>2</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='d3  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='d3  std-midleft' nowrap><a href='/profiles.php?blinkp' class='flag'>
+					<img src='/images/g/67/226sm.gif' class='flagimg' height='14' width='25' align='top' title='BlinkP' alt='BlinkP'></a>&nbsp;BlinkP</td>
+
+					
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid mpd'>4</td>
+
+					<td class='d3  std-mid'>6</td>
+
+					<td class='d3  std-mid'>4</td>
+
+					<!--<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>2.00</td>
+
+					<td class='d3  std-mid'>2</td>
+ -->
+					<td class='d3  std-mid'>.333</td>
+
+					<!--<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>1</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>3</td>
+					<td class='c0'>0</td>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='d3  std-mid' style='border-left: 1px solid #c6c7c2;'><div class='promotion'>3</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='d3  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='d3  std-midleft' nowrap><a href='/profiles.php?pantonej' class='flag'>
+					<img src='/images/f2/p/PantoneJsm.gif' class='flagimg' height='14' width='25' align='top' title='PantoneJ' alt='PantoneJ'></a>&nbsp;PantoneJ</td>
+
+					
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid mpd'>4</td>
+
+					<td class='d3  std-mid'>5</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<!--<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid'>0.50</td>
+
+					<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>1.000</td>
+
+					<!--<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>1</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>3</td>
+					<td class='c1'>1</td>
+					<td class='c0'>1</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>0</td>
+
+					<td class='d3  std-mid' style='border-left: 1px solid #c6c7c2;'><div class='promotion'>4</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='d3  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='d3  std-midleft' nowrap><a href='/profiles.php?gossettn' class='flag'>
+					<img src='/images/g/62/6sm.gif' class='flagimg' height='14' width='25' align='top' title='GossettN' alt='GossettN'></a>&nbsp;GossettN</td>
+
+					
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid mpd'>2</td>
+
+					<td class='d3  std-mid'>5</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<!--<td class='d3  std-mid'>3</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<td class='d3  std-mid'>1.00</td>
+
+					<td class='d3  std-mid'>1</td>
+ -->
+					<td class='d3  std-mid'>.800</td>
+
+					<!--<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c1'>2</td>
+					<td class='c1'>2</td>
+					<td class='c0'>1</td>
+					<td class='c0'>0</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='d3  std-mid' style='border-left: 1px solid #c6c7c2;'><div class='promotion'>5</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='d3  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='d3  std-midleft' nowrap><a href='/profiles.php?crouche' class='flag'>
+					<img src='/images/b/b1073sm.gif' class='flagimg' height='14' width='25' align='top' title='CrouchE' alt='CrouchE'></a>&nbsp;CrouchE</td>
+
+					
+					<td class='d3  std-mid'>1</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>2</td>
+
+					<td class='d3  std-mid mpd'>2</td>
+
+					<td class='d3  std-mid'>5</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<!--<td class='d3  std-mid'>3</td>
+
+					<td class='d3  std-mid'>3</td>
+
+					<td class='d3  std-mid'>1.00</td>
+
+					<td class='d3  std-mid'>1</td>
+ -->
+					<td class='d3  std-mid'>.800</td>
+
+					<!--<td class='d3  std-mid'>0</td>
+ -->
+					<td class='d3  std-mid'>0</td>
+
+					<td class='d3  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>1</td>
+					<td class='c0'>3</td>
+					<td class='c1'>2</td>
+					<td class='c0'>0</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>6</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?hombergerc' class='flag'>
+					<img src='/images/flags/1600/c1692sm.gif' class='flagimg' height='14' width='25' align='top' title='HombergerC' alt='HombergerC'></a>&nbsp;HombergerC</td>
+
+					
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid mpd'>2</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>2</td>
+
+					<!--<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>0.50</td>
+
+					<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>1.000</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c0'>3</td>
+					<td class='c1'>0</td>
+					<td class='c0'>2</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>7</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?hur' class='flag'>
+					<img src='/images/flags/1800/a1864sm.gif' class='flagimg' height='14' width='25' align='top' title='HuR' alt='HuR'></a>&nbsp;HuR</td>
+
+					
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid mpd'>2</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<!--<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1.00</td>
+
+					<td class='odd-row  std-mid'>1</td>
+ -->
+					<td class='odd-row  std-mid'>.667</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c1'>1</td>
+					<td class='c1'>0</td>
+					<td class='c0'>3</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>8</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?markwoodc' class='flag'>
+					<img src='/images/flags/2300/c2386sm.gif' class='flagimg' height='14' width='25' align='top' title='MarkwoodC' alt='MarkwoodC'></a>&nbsp;MarkwoodC</td>
+
+					
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid mpd'>1</td>
+
+					<td class='  std-mid'>4</td>
+
+					<td class='  std-mid'>4</td>
+
+					<!--<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.800</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>2</td>
+					<td class='c1'>1</td>
+					<td class='c1'>0</td>
+					<td class='c1'>2</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>9</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?downeymbrella_ella_ella' class='flag'>
+					<img src='/images/g/71/95sm.gif' class='flagimg' height='14' width='25' align='top' title='DowneyMbrella ella ella' alt='DowneyMbrella ella ella'></a>&nbsp;DowneyMbrella ella ella</td>
+
+					
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid mpd'>1</td>
+
+					<td class='odd-row  std-mid'>4</td>
+
+					<td class='odd-row  std-mid'>4</td>
+
+					<!--<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>1.00</td>
+
+					<td class='odd-row  std-mid'>1</td>
+ -->
+					<td class='odd-row  std-mid'>.800</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>0</td>
+					<td class='c0'>1</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>10</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?pearcej' class='flag'>
+					<img src='/images/f2/p/PearceJsm.gif' class='flagimg' height='14' width='25' align='top' title='PearceJ' alt='PearceJ'></a>&nbsp;PearceJ</td>
+
+					
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid mpd'>1</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<!--<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.750</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>3</td>
+					<td class='c1'>1</td>
+					<td class='c1'>0</td>
+					<td class='c0'>2</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>11</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?vatterv' class='flag'>
+					<img src='/images/a/a1030sm.gif' class='flagimg' height='14' width='25' align='top' title='VatterV' alt='VatterV'></a>&nbsp;VatterV</td>
+
+					
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid mpd'>1</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<!--<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>2.00</td>
+
+					<td class='odd-row  std-mid'>2</td>
+ -->
+					<td class='odd-row  std-mid'>.333</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>0</td>
+					<td class='c0'>1</td>
+					<td class='c0'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>12</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?turners' class='flag'>
+					<img src='/images/c/c645sm.gif' class='flagimg' height='14' width='25' align='top' title='TurnerS' alt='TurnerS'></a>&nbsp;TurnerS</td>
+
+					
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid mpd'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>2</td>
+
+					<!--<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>0.50</td>
+
+					<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>1.000</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c1'>1</td>
+					<td class='c1'>0</td>
+					<td class='c0'>2</td>
+					<td class='c0'>3</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>13</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?piercyb' class='flag'>
+					<img src='/images/flags/2000/c2080sm.gif' class='flagimg' height='14' width='25' align='top' title='PiercyB' alt='PiercyB'></a>&nbsp;PiercyB</td>
+
+					
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid mpd'>1</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<!--<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1.00</td>
+
+					<td class='odd-row  std-mid'>1</td>
+ -->
+					<td class='odd-row  std-mid'>.667</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>1</td>
+					<td class='c0'>0</td>
+					<td class='c1'>2</td>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>14</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?griffinnj' class='flag'>
+					<img src='/images/flags/1200/b1218sm.gif' class='flagimg' height='14' width='25' align='top' title='GriffinNJ' alt='GriffinNJ'></a>&nbsp;GriffinNJ</td>
+
+					
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid mpd'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>1</td>
+
+					<!--<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.667</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>3</td>
+					<td class='c1'>0</td>
+					<td class='c0'>1</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>15</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?rosendahlh' class='flag'>
+					<img src='/images/c/c715sm.gif' class='flagimg' height='14' width='25' align='top' title='RosendahlH' alt='RosendahlH'></a>&nbsp;RosendahlH</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-1</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<!--<td class='odd-row  std-mid'>4</td>
+
+					<td class='odd-row  std-mid'>4</td>
+
+					<td class='odd-row  std-mid'>1.00</td>
+
+					<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>1.000</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>3</td>
+					<td class='c1'>0</td>
+					<td class='c0'>1</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>16</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?flenkert' class='flag'>
+					<img src='/images/flags/1200/b1279sm.gif' class='flagimg' height='14' width='25' align='top' title='FlenkerT' alt='FlenkerT'></a>&nbsp;FlenkerT</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-1</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<!--<td class='  std-mid'>4</td>
+
+					<td class='  std-mid'>4</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>1.000</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c1'>0</td>
+					<td class='c1'>2</td>
+					<td class='c0'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>17</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?stauchj' class='flag'>
+					<img src='/images/f2/s/StauchJsm.gif' class='flagimg' height='14' width='25' align='top' title='StauchJ' alt='StauchJ'></a>&nbsp;StauchJ</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-1</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<!--<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>1.00</td>
+
+					<td class='odd-row  std-mid'>1</td>
+ -->
+					<td class='odd-row  std-mid'>.800</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>3</td>
+					<td class='c0'>1</td>
+					<td class='c1'>2</td>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>0</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>18</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?nesbergnchill' class='flag'>
+					<img src='/images/f2/n/NesbergNChillsm.gif' class='flagimg' height='14' width='25' align='top' title='NesbergNChill' alt='NesbergNChill'></a>&nbsp;NesbergNChill</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>1</td>
+
+					<!--<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.800</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>1</td>
+					<td class='c0'>0</td>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c0'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>19</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?ayreyk' class='flag'>
+					<img src='/images/g/67/74sm.gif' class='flagimg' height='14' width='25' align='top' title='AyreyK' alt='AyreyK'></a>&nbsp;AyreyK</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<!--<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>0.67</td>
+
+					<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>1.000</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>0</td>
+					<td class='c0'>3</td>
+					<td class='c0'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>20</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?autonj' class='flag'>
+					<img src='/images/flags/1200/d1269sm.gif' class='flagimg' height='14' width='25' align='top' title='AutonJ' alt='AutonJ'></a>&nbsp;AutonJ</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-1</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<!--<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.750</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c0'>0</td>
+					<td class='c0'>2</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>21</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?terryj' class='flag'>
+					<img src='/images/g/74/a1944sm.gif' class='flagimg' height='14' width='25' align='top' title='TerryJ' alt='TerryJ'></a>&nbsp;TerryJ</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<!--<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>2.00</td>
+
+					<td class='odd-row  std-mid'>2</td>
+ -->
+					<td class='odd-row  std-mid'>.333</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>3</td>
+					<td class='c1'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>0</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>22</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?nanneycb' class='flag'>
+					<img src='/images/c/c791sm.gif' class='flagimg' height='14' width='25' align='top' title='NanneyCB' alt='NanneyCB'></a>&nbsp;NanneyCB</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-2</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<!--<td class='  std-mid'>5</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>1.67</td>
+
+					<td class='  std-mid'>3</td>
+ -->
+					<td class='  std-mid'>.400</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>1</td>
+					<td class='c0'>3</td>
+					<td class='c1'>0</td>
+					<td class='c0'>2</td>
+					<td class='c1'>2</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>1</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>23</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?hulsa' class='flag'>
+					<img src='/images/flags/2300/e2377sm.gif' class='flagimg' height='14' width='25' align='top' title='HulsA' alt='HulsA'></a>&nbsp;HulsA</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-2</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<!--<td class='odd-row  std-mid'>5</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>1.67</td>
+
+					<td class='odd-row  std-mid'>3</td>
+ -->
+					<td class='odd-row  std-mid'>.400</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c1'>1</td>
+					<td class='c0'>3</td>
+					<td class='c0'>0</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>24</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?braunsdorfc' class='flag'>
+					<img src='/images/g/68/g173sm.gif' class='flagimg' height='14' width='25' align='top' title='BraunsdorfC' alt='BraunsdorfC'></a>&nbsp;BraunsdorfC</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-2</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>1</td>
+
+					<!--<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>1.00</td>
+
+					<td class='  std-mid'>1</td>
+ -->
+					<td class='  std-mid'>.800</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>2</td>
+					<td class='c0'>1</td>
+					<td class='c1'>0</td>
+					<td class='c0'>3</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>25</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?murphymg' class='flag'>
+					<img src='/images/f2/m/MurphyMGsm.gif' class='flagimg' height='14' width='25' align='top' title='MurphyMG' alt='MurphyMG'></a>&nbsp;MurphyMG</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-2</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<!--<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<td class='odd-row  std-mid'>1.50</td>
+
+					<td class='odd-row  std-mid'>2</td>
+ -->
+					<td class='odd-row  std-mid'>.500</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c1'>2</td>
+					<td class='c0'>0</td>
+					<td class='c0'>1</td>
+					<td class='c0'>1</td>
+					<td class='c0'>3</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>26</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?brignallr' class='flag'>
+					<img src='/images/flags/1800/d1817sm.gif' class='flagimg' height='14' width='25' align='top' title='BrignallR' alt='BrignallR'></a>&nbsp;BrignallR</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-4</td>
+
+					<td class='  std-mid'>2</td>
+
+					<td class='  std-mid'>1</td>
+
+					<!--<td class='  std-mid'>6</td>
+
+					<td class='  std-mid'>4</td>
+
+					<td class='  std-mid'>1.50</td>
+
+					<td class='  std-mid'>2</td>
+ -->
+					<td class='  std-mid'>.500</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>3</td>
+					<td class='c0'>2</td>
+					<td class='c1'>1</td>
+					<td class='c0'>1</td>
+					<td class='c1'>0</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>2</td>
+
+					<td class='odd-row  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>27</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='odd-row  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='odd-row  std-midleft' nowrap><a href='/profiles.php?packb' class='flag'>
+					<img src='/images/d/d737sm.gif' class='flagimg' height='14' width='25' align='top' title='PackB' alt='PackB'></a>&nbsp;PackB</td>
+
+					
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid mpd'>-4</td>
+
+					<td class='odd-row  std-mid'>1</td>
+
+					<td class='odd-row  std-mid'>2</td>
+
+					<!--<td class='odd-row  std-mid'>5</td>
+
+					<td class='odd-row  std-mid'>3</td>
+
+					<td class='odd-row  std-mid'>1.67</td>
+
+					<td class='odd-row  std-mid'>3</td>
+ -->
+					<td class='odd-row  std-mid'>.400</td>
+
+					<!--<td class='odd-row  std-mid'>0</td>
+ -->
+					<td class='odd-row  std-mid'>0</td>
+
+					<td class='odd-row  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+		<tr>
+					<td class='c0'>1</td>
+					<td class='c0'>2</td>
+					<td class='c1'>0</td>
+					<td class='c0'>2</td>
+					<td class='c1'>1</td>
+					<td class='c0' style='border-right: 3px solid #ffffff;'>3</td>
+
+					<td class='  std-mid' style='border-left: 1px solid #c6c7c2;'><div class=''>28</div></td>
+ <!-- RANK -->
+					
+					<!--<td class='  std-mid' style='vertical-align:middle;'><img src='/images/misc/.png'></td>
+  RANK Up/DOWN-->
+					
+					<td class='  std-midleft' nowrap><a href='/profiles.php?beckerd' class='flag'>
+					<img src='/images/a/a1073sm.gif' class='flagimg' height='14' width='25' align='top' title='BeckerD' alt='BeckerD'></a>&nbsp;BeckerD</td>
+
+					
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid mpd'>-5</td>
+
+					<td class='  std-mid'>1</td>
+
+					<td class='  std-mid'>2</td>
+
+					<!--<td class='  std-mid'>6</td>
+
+					<td class='  std-mid'>3</td>
+
+					<td class='  std-mid'>2.00</td>
+
+					<td class='  std-mid'>4</td>
+ -->
+					<td class='  std-mid'>.200</td>
+
+					<!--<td class='  std-mid'>0</td>
+ -->
+					<td class='  std-mid'>0</td>
+
+					<td class='  std-mid'>0</td>
+
+					
+					</tr>
+
+				
+
+
+				<tr>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>57</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>18</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>89</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>11</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>68</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;border-top:1px solid #666666;'>0</td>
+					<td colspan=3 style='background-color:#f6f7f2;font-size:11px;text-align:left;border-top:1px solid #666666;'>&nbsp;% Correct (E Cascade Div 1)</td>
+					<td rowspan=3 colspan=10 style='background-color:#f6f7f2;font-size:12px;text-align:right;vertical-align:middle;border-top:1px solid #666666;padding-right:4px;'><a href='/standings.php?76&1&E_Cascade_Div_1'>Today's Full Rundle E Cascade Div 1 Standings</a>&nbsp;&nbsp;</td>
+				</tr>
+			
+				
+				<tr>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>76</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>29</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>88</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>32</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>77</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>13</td>
+					<td colspan=3 style='background-color:#f6f7f2;font-size:11px;text-align:left;'>&nbsp;% Correct (Leaguewide)</td>
+					
+				</tr>
+				<tr>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>1.3</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>1.6</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>0.8</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>1.7</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>1.2</td>
+					<td style='background-color:#f6f7f2;font-size:10px;text-align:center;'>2.1</td>
+					<td colspan=3 style='background-color:#f6f7f2;font-size:11px;text-align:left;'>&nbsp;Average Defense</td></tr></table>
+
+		</td>
+	</tr>
+</table>
+
+	
+	
+	<div style='clear:both;'></div>
+
+	<div class="contentbox_new" style='font-size:13px;width:90%;'>
+		<h4>LL76 Match Day 1 Results by League</h4>
+		<div style='padding:4px 20px 4px 20px;text-align:center;'>
+			<a href='/match.php?76&1&Alpine' >Alpine</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Arcadia' >Arcadia</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Archipelago' >Archipelago</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Atlantic' >Atlantic</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Badlands' >Badlands</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Bayou' >Bayou</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Canyon' >Canyon</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Cascade' >Cascade</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Central' >Central</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Citadel' >Citadel</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Coastal' >Coastal</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Commonwealth' >Commonwealth</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Continental' >Continental</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Corridor' >Corridor</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Delta' >Delta</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Elysium' >Elysium</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Fjord' >Fjord</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Frontier' >Frontier</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Garden' >Garden</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Glacier' >Glacier</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Highland' >Highland</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Horizon' >Horizon</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Juniper' >Juniper</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Laguna' >Laguna</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Maelstrom' >Maelstrom</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Magnolia' >Magnolia</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Maritime' >Maritime</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Memorial' >Memorial</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Meridian' >Meridian</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Metro' >Metro</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Midland' >Midland</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Morningstar' >Morningstar</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Olympic' >Olympic</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Pacific' >Pacific</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Peninsula' >Peninsula</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Piedmont' >Piedmont</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Plaza' >Plaza</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Prairie' >Prairie</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Rubicon' >Rubicon</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Seaboard' >Seaboard</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Sequoia' >Sequoia</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Sierra' >Sierra</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Skyline' >Skyline</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Sugarloaf' >Sugarloaf</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Summit' >Summit</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Taiga' >Taiga</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Tidewater' >Tidewater</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Tundra' >Tundra</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Typhoon' >Typhoon</a>&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp; <a href='/match.php?76&1&Valley' >Valley</a>
+		</div>
+	</div>
+
+	</div>
+
+<div id="wrapfooter">
+	
+	<!--<span class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group-->
+	</span>
+</div>
+
+
+
+	</td>
+	</tr>
+	</table>
+		
+	<!-- Clear columns and divs -->
+	<div class="clear"></div>
+
+	<!-- START footer -->
+	<div id="footer">
+		<p>
+		Copyright &copy; 1998-2018 LearnedLeague LLC | 
+		<a href="/thorsten/statement.php">Terms of Service</a> | 
+		All Rights Reserved | <a href="/thorsten/privacy.php">Privacy Policy</a> | <a href="/thorsten/contact.php">Contact</a>
+		</p>
+	</div>
+	<!-- STOP footer -->
+
+	<!-- FACEBOOK AND TWITTER ICONS 
+	<center>
+		<a href="https://www.facebook.com/LearnedLeague"><img src="/images/misc/fb.png" border=0 alt="LearnedLeague on Facebook" style="vertical-align: text-bottom;" height=22 width=22 /></a>&nbsp;<a href="https://www.twitter.com/LearnedLeague"><img src="https://twitter-badges.s3.amazonaws.com/t_small-a.png" border=0 alt="Follow LearnedLeague on Twitter" style="vertical-align: text-bottom;" height=22 width=22 /></a>
+	</center>
+		 FACEBOOK AND TWITTER ICONS -->
+
+	
+
+
+	<!--GOOGLE ANALYTICS //-->
+
+	<!--
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-2098157-1";
+	urchinTracker();
+	</script>
+	-->
+
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2098157-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	<!-- // GOOGLE ANALYTICS-->
+
+	<!--
+	<div style="display: none">  
+		IF not S_IS_BOT 
+				<img src="./cron.php?cron_type=queue&amp;sid=6d02d3eb6715af3dfde55e458804fca7" width="1" height="1" />
+		ENDIF 
+	</div> 
+	-->
+
+
+
+
+</body>
+</html>
